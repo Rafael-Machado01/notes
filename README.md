@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+[JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
+[REACT__BADGE]: https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react
+[PROJECT__BADGE]: https://img.shields.io/badge/📲_Veja_o_projeto-000?style=for-the-badge&logo=project
+[PROJECT__URL]: https://ceps-3bwt.vercel.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center" style="font-weight: bold;">Notes 🗒️</h1>
 
-## Available Scripts
+![react][REACT__BADGE] ![javascript][JAVASCRIPT__BADGE]
 
-In the project directory, you can run:
+<p align="center">
+ <a href="#about">Sobre</a> • 
+ <a href="#started">Como rodar </a> • 
+  <a href="#colab">Colaboradores</a> •
+ <a href="#contribute">Links</a>
+</p>
+<p align="center">
+    <img src="./mockup.png" alt="Image Example" width="400px">
+</p>
 
-### `npm start`
+<h2 id="started">📌 Sobre</h2>
+O projeto notes é um marco muito importante para mim! É um marco para mim, é como se fosse um "TCC" do modulo do front end do curso Full Stack Turbo. E estou muito feliz com minhas novas habilidades!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![project][PROJECT__BADGE]][PROJECT__URL]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 id="started">🚀 Como rodar </h2>
 
-### `npm test`
+Clonar o repositório e apenas instalar as dependências
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>Requisitos</h3>
 
-### `npm run build`
+- [NodeJS](https://nodejs.org/pt/download)
+- [Git](https://git-scm.com/docs/git-init)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h3>Clonar</h3>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Primeiro vamos clonar o repositório.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Rafael-Machado01/notes
+```
 
-### `npm run eject`
+<h3>Executar</h3>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd notes
+npm i
+npm start
+```
+<h2 id="colab">📖 Linçenca</h2>
+Sem restrição, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do projeto.
+<h2 id="colab">🤝 Colaborades</h2>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Um agradecimento especial a todas as pessoas que contribuíram para o nosso projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/61896274?v=4" width="100px;" alt="Fernanda Kipper Profile Picture"/><br>
+        <sub>
+          <b>Fernanda Kipper</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/alissonsuassuna">
+        <img src="https://avatars.githubusercontent.com/u/19367317?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <sub>
+          <b>Alisson Suasuna</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<h3>Documentações que podem ajudar</h3>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[💎 React](https://pt-br.react.dev/learn)
+[🚀 Create React App](https://create-react-app.dev/)
+[📱 React Icons](https://react-icons.github.io/react-icons/)
+[🪄 React BootStrap](https://create-react-app.dev/docs/adding-bootstrap/)
+[👦🏻LikedIn Criador](https://www.linkedin.com/in/rafael-machado-ampudia/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
