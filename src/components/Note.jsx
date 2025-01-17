@@ -1,44 +1,33 @@
-export default function Note() {
+import {useState} from 'react'
+import  Delete  from "./Delete"
+export default function Note(props) {
+   const [showDelete, setShowDelete] = useState(false)
+   function handleDelete() {
+      setShowDelete(true)
+   }
+   function offDelete() {
+      setShowDelete(false)
+   }
+   if (!props.title && !props.content) {
+      return null; 
+   }
+   function handleClick() {
+      props.onDelete(props.id)
+    }
    return (
       <div className="container">
-         <div className="row d-flex align-items-start custom-margin-sm justify-content-center">
-            <div className="col-lg-3 col-sm-6 note m-5 rounded-5">
-               <h3 className="text-center fw-bold mb-3 primary-black">Title exemple</h3>
-               <p className="primary-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis ad, sunt nihil perferendis suscipit id consequatur numquam quas quibusdam quod excepturi labore dolorem doloribus fugit beatae tenetur repellat adipisci
-               </p>
-            </div>
-            <div className="col-lg-3 col-sm-6 note m-5 rounded-5">
-               <h3 className="text-center fw-bold mb-3 primary-black">Title exemple</h3>
-               <p className="primary-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis ad, sunt nihil perferendis suscipit id consequatur numquam quas quibusdam quod excepturi labore dolorem doloribus fugit beatae tenetur repellat adipisci
-               </p>
-            </div>
-            <div className="col-lg-3 col-sm-6 note m-5 rounded-5">
-               <h3 className="text-center fw-bold mb-3 primary-black">Title exemple</h3>
-               <p className="primary-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis ad, sunt nihil perferendis suscipit id consequatur numquam quas quibusdam quod excepturi labore dolorem doloribus fugit beatae tenetur repellat adipisci
-               </p>
-            </div>
-            <div className="col-lg-3 col-sm-6 note m-5 rounded-5">
-               <h3 className="text-center fw-bold mb-3 primary-black">Title exemple</h3>
-               <p className="primary-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis ad, sunt nihil perferendis suscipit id consequatur numquam quas quibusdam quod excepturi labore dolorem doloribus fugit beatae tenetur repellat adipisci
-               </p>
-            </div>
-            <div className="col-lg-3 col-sm-6 note m-5 rounded-5">
-               <h3 className="text-center fw-bold mb-3 primary-black">Title exemple</h3>
-               <p className="primary-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis ad, sunt nihil perferendis suscipit id consequatur numquam quas quibusdam quod excepturi labore dolorem doloribus fugit beatae tenetur repellat adipisci
-               </p>
-            </div>
-            <div className="col-lg-3 col-sm-6 note m-5 rounded-5">
-               <h3 className="text-center fw-bold mb-3 primary-black">Title exemple</h3>
-               <p className="primary-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis ad, sunt nihil perferendis suscipit id consequatur numquam quas quibusdam quod excepturi labore dolorem doloribus fugit beatae tenetur repellat adipisci
-               </p>
-            </div>
-         </div>
-      </div>
+  <div className="row justify-content-center">
+    <div className="col-4 col-md-6 col-sm-12 note m-5 rounded-5" id={props.id} onMouseOut={offDelete} onMouseOver={handleDelete}>
+      <h3 className="text-center fw-bold mb-3 primary-black">{props.title}</h3>
+      <p className="primary-black">
+        {props.content}
+      </p>
+      {showDelete && <Delete onClick={handleClick} />}
+    </div>
+  </div>
+</div>
+
+  
+   
    )
 }

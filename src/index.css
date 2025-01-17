@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none ;
 }
 :root{
   --primary-color: #3538FF;
@@ -24,7 +23,7 @@ body {
 
 .note {
   background: var(--background-white-gray);
-  padding: 25px;
+  padding: 20px;
   box-shadow: var(--box-shadow);  
   transition: box-shadow 1s ease;
 }
@@ -108,3 +107,17 @@ footer {
     bottom: 0;
   }
 }
+.btn-delete {
+  background-color: var(--primary-color);
+  color: var(--background-white);
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;;
+  box-shadow: var(--box-shadow);
+}
+.btn-delete:hover {
+  color: var(--background-white-gray);
+  box-shadow: var(--box-shadow-hover);
+}
+  
