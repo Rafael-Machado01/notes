@@ -1,7 +1,7 @@
 [JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
 [REACT__BADGE]: https://img.shields.io/badge/React-005CFE?style=for-the-badge&logo=react
 [PROJECT__BADGE]: https://img.shields.io/badge/📲_Veja_o_projeto-000?style=for-the-badge&logo=project
-[PROJECT__URL]: https://ceps-3bwt.vercel.app
+[PROJECT__URL]: notes-nine-indol.vercel.app
 
 <h1 align="center" style="font-weight: bold;">Notes 🗒️</h1>
 
